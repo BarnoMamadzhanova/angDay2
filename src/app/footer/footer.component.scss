@@ -1,0 +1,50 @@
+
+
+.footer {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: large;
+
+    .links {
+        margin: 5px 0;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: darkslategrey;
+
+            &:hover {
+                color: darkred;
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        margin: 5px 0;
+        justify-content: center;
+        align-items: baseline;
+        gap: 20px;
+
+        a {
+            text-decoration: none;
+            color: rgb(46, 45, 45);
+            font-size: larger;
+
+            &:hover {
+                color: darkred;
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        margin: 5px 0;
+        color: rgb(50, 50, 50);
+    }
+}

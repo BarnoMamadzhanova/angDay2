@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  donate : number = 0;
+
+  addDonate(){
+    this.donate += 10;
+  }
 
 }

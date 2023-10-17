@@ -1,1 +1,25 @@
-<p>home-page works!</p>
+
+<div class="myContainer">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" >
+        <div class="card card-fix cards mx-2" *ngFor ="let car of newCarsArr">
+            <img src="{{car.image}}" class="card-img-top img" alt="{{car.name}}">
+            <div class="card-body">
+                <h4 class="card-title">{{car.type}}</h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Fuel: {{car.fuel}}</li>
+                    <li class="list-group-item">Lease Term from: {{car.leaseTerm}} day</li>
+                </ul>
+                <a class="btn clickBtn" data-bs-toggle="collapse" href="#{{car.type}}" role="button" aria-expanded="false" aria-controls="collapseExample">Check the price</a>
+                <div class="collapse my-2" id="{{car.type}}">
+                    <div class="card card-body collapseText">
+                         <p>From {{car.calcPrice()}}/day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+

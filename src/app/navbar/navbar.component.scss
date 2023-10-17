@@ -1,0 +1,59 @@
+
+
+.myNav {
+    height: 10vh;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: larger;
+    background-color: lightgray;
+
+
+    .logo {
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: larger;
+        color: rgb(17, 35, 35);
+
+        &:hover {
+            color: rgb(53, 101, 101);
+        }
+    }
+
+    .myToggler {
+        background-color: white;
+        
+        &:hover {
+            background-color: rgb(144, 154, 154);
+        }
+    }
+
+    .donateBtn{
+        background-color: darkslategray;
+        color: white;
+        margin: 10px 0;
+
+        &:hover {
+            transform: scale(1.02);
+            transition: all ease-in 0.2s;
+            background-color: rgb(113, 113, 113);
+        }
+    }
+
+    p {
+        color: rgb(55, 103, 103);
+    }
+
+    .donateCount p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(55, 103, 103);
+        padding-top: 1rem;
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: larger;
+    }
+}
